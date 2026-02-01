@@ -2,12 +2,11 @@
 
 **Status: Alpha**
 
-🔗 **Disponível no Stylus:**  
-https://userstyles.world/style/25762/youtube-music-custom-alpha-version
-
 UserStyle desenvolvido para a extensão **Stylus**, focado em customização visual
 avançada do YouTube Music (fundo dinâmico, blur/vidro, player customizado,
 barra de progresso avançada e ajustes de UI/UX).
+
+🔗 **Disponível no em:**  https://userstyles.world/style/25762/youtube-music-custom-alpha-version
 
 ## Preview
 
