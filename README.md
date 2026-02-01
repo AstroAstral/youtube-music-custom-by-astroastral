@@ -3,6 +3,12 @@
 🔗 **Disponível no Stylus:**  
 https://userstyles.world/style/25762/youtube-music-custom-alpha-version
 
+**Status: Alpha**
+
+UserStyle desenvolvido para a extensão **Stylus**, focado em customização visual
+avançada do YouTube Music (fundo dinâmico, blur/vidro, player customizado,
+barra de progresso avançada e ajustes de UI/UX).
+
 ## Preview
 
 ## Before / After
@@ -20,21 +26,14 @@ https://userstyles.world/style/25762/youtube-music-custom-alpha-version
 ![Player](screenshots/player.png)
 
 
-**Status: Alpha**
-
-UserStyle desenvolvido para a extensão **Stylus**, focado em customização visual
-avançada do YouTube Music (fundo dinâmico, blur/vidro, player customizado,
-barra de progresso avançada e ajustes de UI/UX).
-
 ## Requisitos
 - Navegador Chromium-based (testado no Brave)
 - Extensão Stylus
 
 ## Instalação
 1. Instale a extensão Stylus
-2. Crie um novo estilo
-3. Cole o conteúdo do arquivo `style.css`
-4. Ative para `music.youtube.com`
+2. Instale em https://userstyles.world/style/25762/youtube-music-custom-alpha-version
+3. Aplique no navegador
 
 ## Observação
 O desenvolvimento deste projeto contou com o apoio de ferramentas de IA
