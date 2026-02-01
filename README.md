@@ -1,4 +1,18 @@
 # YouTube Music Custom by AstroAstral
+## Preview
+
+### Home
+![Home](screenshots/home.png)
+
+### Menu lateral
+![Sidebar](screenshots/sidebar.png)
+
+### Playlist
+![Playlist](screenshots/playlist.png)
+
+### Player
+![Player](screenshots/player.png)
+
 
 **Status: Alpha**
 
