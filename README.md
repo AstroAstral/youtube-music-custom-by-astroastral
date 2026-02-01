@@ -1,9 +1,9 @@
 # YouTube Music Custom by AstroAstral
 
+**Status: Alpha**
+
 🔗 **Disponível no Stylus:**  
 https://userstyles.world/style/25762/youtube-music-custom-alpha-version
-
-**Status: Alpha**
 
 UserStyle desenvolvido para a extensão **Stylus**, focado em customização visual
 avançada do YouTube Music (fundo dinâmico, blur/vidro, player customizado,
