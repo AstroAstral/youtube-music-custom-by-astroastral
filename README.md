@@ -1,16 +1,18 @@
 # YouTube Music Custom by AstroAstral
 ## Preview
 
-### Home
+## Before / After
+
+### Before (YouTube Music padrão)
+![Before Home](screenshots/before-home.png)
+![Before Sidebar](screenshots/before-sidebar.png)
+![Before Playlist](screenshots/before-playlist.png)
+![Before Player](screenshots/before-player.png)
+
+### After (YouTube Music Custom by AstroAstral)
 ![Home](screenshots/home.png)
-
-### Menu lateral
 ![Sidebar](screenshots/sidebar.png)
-
-### Playlist
 ![Playlist](screenshots/playlist.png)
-
-### Player
 ![Player](screenshots/player.png)
 
 
