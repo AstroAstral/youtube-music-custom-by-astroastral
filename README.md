@@ -31,7 +31,7 @@ barra de progresso avançada e ajustes de UI/UX).
 
 ## Instalação
 1. Instale a extensão Stylus
-2. Instale em https://userstyles.world/style/25762/youtube-music-custom-alpha-version
+2. baixe o UserStyle em https://userstyles.world/style/25762/youtube-music-custom-alpha-version
 3. Aplique no navegador
 
 ## Observação
