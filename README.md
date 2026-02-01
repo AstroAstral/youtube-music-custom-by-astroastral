@@ -1,4 +1,8 @@
 # YouTube Music Custom by AstroAstral
+
+🔗 **Disponível no Stylus:**  
+https://userstyles.world/style/SEU-LINK-AQUI
+
 ## Preview
 
 ## Before / After
