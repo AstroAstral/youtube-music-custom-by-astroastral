@@ -1,0 +1,1056 @@
+==/UserStyle== */
+
+@-moz-document domain("music.youtube.com") {
+:root {
+    /* Adjust this to your preference */
+    --r-bg-active: var(--r-bg-img); /* --r-bg-img = estático / --r-bg-grad-ani = animado */ 
+    --r-logo-active: var( --r-logo-verc);
+  
+
+
+
+    /* Call in --r-bg-active */
+    --r-bg-grad-purple: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), linear-gradient(135deg, #ffc3a0 0%, #ffbbec 50%, #a9c9ff 100%);
+    --r-bg-grad-purple-v2: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), linear-gradient(135deg, #ffc3a0 0%, #CC59B9 50%, #794fcd 80%);
+    --r-bg-grad-orange: linear-gradient(rgb(255, 0, 0), rgb(255, 0, 0)), linear-gradient(135deg, #f00 0%, #ff3e00 50%, #ff3e00 80%);
+    --r-bg-grad-cherry: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, .65)), linear-gradient(135deg, #DD0872 0%, #970a50 40%, #0D2043 70%);
+    --r-bg-grad-aurora: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, .65)), linear-gradient(135deg, #27DC60 0%, #257674 50%, #4c2979 70%);
+    
+    --r-bg-grad-ani: url("https://www.gstatic.com/youtube/img/promos/growth/music_premium_lp2_header_background_dark_1440x578.webp");
+    --r-bg-img: url("https://i.imgur.com/1l0hbBF.jpeg ");
+
+    
+
+    /* Call in --r-logo-active */
+    --r-logo-verc: url("https://i.imgur.com/KaR2RxF.png"); /* CUSTOM */
+  
+    --r-logo-sans: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100.653 24'%3E%3Cellipse cx='12.2' cy='12' rx='12.2' ry='12' fill='%23FF0000'/%3E%3Cellipse cx='12.2' cy='12' rx='7.3' ry='7.2' fill='%23FF0000' stroke='%23FFFFFF' stroke-width='1.2'/%3E%3Cpolygon points='9.7,15.5 16.1,12 9.7,8.5' fill='%23FFFFFF'/%3E%3Cpath d='m 29.0652,4.3800001 v -1.1142 h 0.243 l 0.324,0.6804 0.3222,-0.6804 h 0.243 v 1.1142 h -0.2502 v -0.5652 l -0.2376,0.5292 H 29.553 l -0.2376,-0.5292 v 0.5652 z m 1.310402,-0.9 h 0.243 v 0.522 q 0,0.09 0.0306,0.1314 0.0324,0.0396 0.1026,0.0396 0.0684,0 0.099,-0.0396 0.0324,-0.0414 0.0324,-0.1314 v -0.522 h 0.243 v 0.522 q 0,0.1926 -0.0954,0.2934 -0.0954,0.1008 -0.2808,0.1008 -0.1836,0 -0.279,-0.1008 -0.0954,-0.1008 -0.0954,-0.2934 z m 0.865801,0.801 0.0864,-0.1926 q 0.0702,0.054 0.1206,0.0738 0.0504,0.018 0.1188,0.018 0.1152,0 0.1152,-0.0666 0,-0.027 -0.0288,-0.0468 -0.0288,-0.0198 -0.1026,-0.045 -0.1242,-0.0432 -0.1782,-0.0846 -0.0954,-0.0702 -0.0954,-0.1962 0,-0.126 0.09,-0.2016 0.09,-0.0756 0.2394,-0.0756 0.1692,0 0.2898,0.09 l -0.0864,0.1944 q -0.099,-0.0666 -0.1998,-0.0666 -0.09,0 -0.09,0.0576 0,0.0234 0.0234,0.0396 0.0234,0.0144 0.0954,0.0378 0.1584,0.0504 0.2232,0.1188 0.0666,0.0666 0.0666,0.1746 0,0.1332 -0.0954,0.2106 -0.0936,0.0756 -0.2574,0.0756 -0.1998,0 -0.3348,-0.1152 z m 1.157397,0.1062 h -0.0702 q -0.1386,0 -0.2016,-0.0648 -0.0612,-0.0648 -0.0612,-0.2124 v -0.63 h 0.243 v 0.6138 q 0.0018,0.0378 0.0072,0.0504 0.0072,0.0126 0.0288,0.0126 h 0.054 z m -0.2106,-1.2816 q 0.0594,0 0.099,0.0414 0.0414,0.0396 0.0414,0.099 0,0.0612 -0.0414,0.1026 -0.0396,0.0396 -0.1008,0.0396 -0.0612,0 -0.1008,-0.0396 -0.0396,-0.0396 -0.0396,-0.1008 0,-0.0612 0.0396,-0.1008 0.0414,-0.0414 0.1026,-0.0414 z m 1.052999,0.4806 -0.1098,0.1782 q -0.1134,-0.0792 -0.2088,-0.0792 -0.0864,0 -0.1368,0.0666 -0.0486,0.0648 -0.0486,0.18 0,0.117 0.0486,0.18 0.0504,0.063 0.144,0.063 0.0594,0 0.1062,-0.018 0.0468,-0.018 0.1116,-0.0666 l 0.1098,0.1782 q -0.0846,0.072 -0.1602,0.1008 -0.0756,0.027 -0.1836,0.027 -0.198,0 -0.3114,-0.1224 -0.1116,-0.1224 -0.1116,-0.3402 0,-0.216 0.1134,-0.342 0.1152,-0.1278 0.3096,-0.1278 0.099,0 0.171,0.027 0.0738,0.027 0.1566,0.0954 z' fill='%23FFFFFF' transform='matrix(17.058083 0 0 17.058083 -467.001129 -53.028473)'/%3E%3C/svg%3E%0A"); /* PADRÃO */
+
+      /* Aumentar tamanho do logo do YouTube Music */
+#layout img.logo {
+    width: 48px !important;   /* ajuste aqui */
+    height: 48px !important;  /* ajuste aqui */
+}
+ /* Centralizar logo verticalmente no menu lateral */
+#layout ytmusic-logo {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+    height: 48px; /* altura lógica do header */
+}
+
+/* Tamanho do logo */
+#layout img.logo {
+    width: 40px !important;
+    height: 40px !important;
+}
+#layout ytmusic-logo {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+    height: 48px;
+
+    transform: translateX(-27px); /* MOVE PRA ESQUERDA E DIREITA */
+}
+
+    /* Progress bar BOLINHA DA LINHA DE REPRODUÇÃO */ 
+    --r-scrubber-icon: url(https://raw.githubusercontent.com/ryokr/Share/main/Icons/shade.png) center center / 100% 100% no-repeat;
+    --r-scrubber-size: 24px;
+#sliderKnob::after { 
+/* COR DA BOLINHA DA LINHA DE REPRODUÇÃO */
+    filter: hue-rotate(180deg) saturate(1.5) brightness(1.1) drop-shadow(0 0 4px rgba(55, 55, 55, .14));
+} 
+
+    /* Right control icon's color */
+    --r-icon-color: #00ff95;
+}
+
+
+
+body:has(ytmusic-app-layout[player-page-open]) {
+    background-image: var(--r-bg-active);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    #content { display: none; }
+    #player-page, #player, .html5-video-player { background: none; }
+    
+    /* popup menu */
+    tp-yt-paper-listbox {
+        background: #00000073;
+        backdrop-filter: blur(48px);
+        border-radius: 10px;
+    }
+}
+
+ytmusic-multi-page-menu-renderer {
+    background: #00000073 !important; 
+    backdrop-filter: blur(48px) !important;
+}
+
+
+#layout {
+    ytmusic-logo { margin-left: 16px; }
+    img.logo { content: var(--r-logo-active); }
+
+#nav-bar-background {/* Efeito de Blur Gradiente APENAS na barra superior */
+    /* 1. Remove cores sólidas */
+    background: transparent !important;
+    border: none !important;
+    
+    /* 2. Aplica o blur */
+    backdrop-filter: blur(40px) !important;
+
+    /* 3. CORREÇÃO: Trava a altura no tamanho original do cabeçalho (64px) */
+    /* Isso impede que o blur desça para o resto da página */
+    height: 64px !important;
+
+    /* 4. O degradê agora acontece apenas dentro dessa tirinha de 64px */
+    /* Começa forte (black) e vai sumindo (transparent) perto da borda de baixo */
+    -webkit-mask-image: linear-gradient(to bottom, black 20%, transparent 100%) !important;
+            mask-image: linear-gradient(to bottom, black 20%, transparent 100%) !important;
+            
+    pointer-events: none !important;
+    z-index: 0 !important;
+}
+
+
+
+    
+   
+    
+    #nav-bar-divider { display: none !important; }
+    .center-content.ytmusic-nav-bar {
+        justify-content: center;
+        
+        ytmusic-search-box {
+            .search-container { box-shadow: unset !important; }
+            .search-box { border-radius: 40px !important; }
+            #input::placeholder { color: transparent; }
+
+            #suggestion-list {
+                border-radius: 8px !Important;
+                top: 53px;
+                padding: unset;
+                border: none;
+            }
+        }
+    }
+    
+    /* sidebar collapsed */
+    #mini-guide-background { border: unset; background: none; }
+    ytmusic-guide-entry-renderer[is-collapsed] .title { display: none; }
+    
+    /* playlist bg */
+    #content {
+        #browse-page[is-playlist-detail-page] .background-gradient { background: unset; }
+        
+        #header {
+            .gradient-container { background-color: unset; }
+
+            .buttons { visibility: hidden }
+            .metadata:hover .buttons { visibility: visible }
+        }
+        
+    }
+
+
+    /* video player */
+    #player-page > .content {
+        padding: var(--ytmusic-player-page-vertical-padding) var(--ytmusic-player-page-horizontal-padding);
+        
+        #side-panel {
+            background: rgba(0, 0, 0, .65);
+            backdrop-filter: blur(48px);
+            border-radius: 12px;
+            padding: 12px;
+            
+            ytmusic-queue-header-renderer {
+                position: sticky;
+                top: 16px;
+                background: #282B30;
+                border-radius: 12px;
+                z-index: 10;
+                padding: 16px;
+            }
+        }
+        
+    }
+    #song-image img, #song-video video, .html5-video-player, .song-media-controls { border-radius: 10px; }
+    .av-toggle { border-radius: 50px; }
+    .av { padding-bottom: 10px; }
+
+
+    /* Mini player */
+    #player:not([player-page-open]) {
+        background: none;
+        
+        #song-media-window {
+            background: none;
+        }
+    }
+    
+
+    /* bottom player */
+    --ytmusic-player-bar-height: 90px;
+    #player-bar-background {
+        background: rgba(0, 0, 0, .65);
+        backdrop-filter: blur(48px);
+        height: 97px;
+        border-radius: 10px;
+        right: 12px;
+        left: 12px;
+        bottom: 12px;
+    }
+    ytmusic-player-bar {
+        background: none;
+        grid-template-columns: 1fr 0.5fr 1fr;
+        grid-template-areas: "start middle end";
+        margin: 0 0 18px 24px;
+        width: calc(100vw - 48px);
+        
+        #primaryProgress { background: linear-gradient(to right, #491e0a 20%, #f70 60%); }
+        #progress-bar {
+            #sliderKnob {
+                visibility: hidden;
+                &::after {
+                    background: var(--r-scrubber-icon);
+                    position: absolute;
+                    content: "";
+
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+
+                    width: var(--r-scrubber-size);
+                    height: var(--r-scrubber-size);
+                }
+            }
+            &:hover #sliderKnob { visibility: visible; }
+        }
+        
+        .middle-controls {
+            grid-area: start;
+            justify-content: left;
+
+            .middle-controls-buttons {
+                order: -1;
+                
+                #like-button-renderer { order: 1; margin: 0px 20px 0px -5px; }
+                #button-shape-dislike { display: none; }
+            }
+        }
+        
+        #left-controls {
+            grid-area: middle;
+            justify-content: center;
+
+            .time-info {
+                position: absolute;
+                bottom: -2px;
+                margin: 0 0 0 8px;
+                background: rgba(255,255,255,.20);
+                border-radius: 50px;
+                color: white;
+                padding: 3px 8px 3px 7px;
+            }
+            .rewind-button, yt-icon-button:nth-last-of-type(2) { display: block !important; }
+
+        }
+        
+        #right-controls {
+            grid-area: end;
+            justify-content: center;
+            
+            #volume-slider {
+                width: 170px;
+                margin-right: 16px;
+                opacity: 1;
+                pointer-events: all;
+                cursor: pointer;
+                 
+                &::before {
+                    content: attr(aria-valuenow);
+                    position: absolute;
+                    left: -10px;
+                    font-size: 14px;
+                    color: #eaeaea;
+                }
+            }
+            #sliderKnob { display: none; }
+            .playback-rate { display: grid !important; }
+            .toggle-player-page-button { display: none; }
+        }
+    }
+    
+    ytmusic-player-bar:not([repeat-mode=NONE]) .repeat.ytmusic-player-bar,
+    ytmusic-player-bar[shuffle-on] .shuffle.ytmusic-player-bar, ytmusic-player-bar[shuffle-on] .expand-shuffle.ytmusic-player-bar
+    { color: var(--r-icon-color); }
+    
+}
+/* =====================================================
+   FINAL BACKGROUND CLEANUP
+   - Remove black gradients (old system)
+   - Remove blue dynamic bar (full-bleed system)
+   ===================================================== */
+/* Global background */
+ytmusic-app-layout::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: var(--r-bg-active);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+/* 1) Remove gradientes pretos clássicos */
+ytmusic-browse-response[has-background]:not([disable-gradient]) .background-gradient.ytmusic-browse-response {
+    background: transparent !important;
+    background-image: none !important;
+}
+
+/* 2) Remove scrims e fades auxiliares */
+.scrim,
+.gradient-container {
+    background: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+
+/* 3) Neutraliza o full-bleed dinâmico (barra azul por chip) */
+ytmusic-fullbleed-thumbnail-renderer[is-background] .image.ytmusic-fullbleed-thumbnail-renderer {
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+    opacity: 0 !important;
+}
+
+/* 4) Segurança extra */
+ytmusic-fullbleed-thumbnail-renderer[is-background] {
+    background: transparent !important;
+    background-image: none !important;
+}
+/* Overlay escuro estável (sem bug do Stylus) */
+html::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5); /* ajuste aqui */
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+ytmusic-player-bar #progress-bar {
+    margin-left: -11px; /* mesmo valor do margin-left da player bar */
+}
+
+
+
+}/* =====================================================
+   PLAYER PROGRESS BAR — FINAL FIX (NO GAP, NO OFFSET)
+   ===================================================== */
+
+/* Remove paddings invisíveis do slider */
+ytmusic-player-bar tp-yt-paper-slider {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Garante que a barra ocupa 100% do espaço visual */
+ytmusic-player-bar #progress-bar {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    overflow: visible !important;
+}
+
+/* Remove o espaço reservado invisível pro thumb (CAUSA DO SOBRANDO) */
+ytmusic-player-bar tp-yt-paper-slider .slider-container {
+    margin-right: calc(var(--r-scrubber-size) * -0.5) !important;
+}
+
+/* === PARTE JÁ TOCADA (colorida) === */
+ytmusic-player-bar #primaryProgress {
+    background: linear-gradient(
+        to right,
+        #491e0a 20%,
+        #ff7700 60%
+    ) !important;
+    border-radius: 999px !important;
+}
+
+/* === PARTE NÃO TOCADA (cinza/transparente) === */
+ytmusic-player-bar tp-yt-paper-slider .slider-track {
+    background: rgba(255,255,255,0.18) !important;
+    border-radius: 999px !important;
+}
+
+/* === ALTURA DA BARRA === */
+ytmusic-player-bar tp-yt-paper-slider {
+    height: 6px !important;
+}
+
+/* === FLOR / SCRUBBER === */
+ytmusic-player-bar #sliderKnob {
+    visibility: hidden;
+}
+
+ytmusic-player-bar #sliderKnob::after {
+    background: var(--r-scrubber-icon);
+    width: var(--r-scrubber-size);
+    height: var(--r-scrubber-size);
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+/* Mostra a flor ao passar o mouse */
+ytmusic-player-bar tp-yt-paper-slider:hover #sliderKnob {
+    visibility: visible;
+}
+
+
+/* Remove highlight de clique do Chrome */
+ytmusic-player-bar tp-yt-paper-slider,
+ytmusic-player-bar tp-yt-paper-slider * {
+    -webkit-tap-highlight-color: transparent !important;
+}
+/* =====================================================
+   SUAVIZA AS DUAS PONTAS DA BARRA (SEM SUMIR)
+   ===================================================== */
+
+/* Container da barra */
+ytmusic-player-bar #progress-bar {
+    overflow: hidden;
+    border-radius: 999px;
+}
+
+/* Parte já tocada */
+ytmusic-player-bar #primaryProgress {
+    border-radius: 999px;
+}
+
+/* Parte que falta */
+ytmusic-player-bar #secondaryProgress {
+    border-radius: 999px;
+}
+ytmusic-player-bar #sliderKnob::after {
+    filter: brightness(1.05) drop-shadow(0 0 3px rgba(0,0,0,.5));
+}
+/* =====================================================
+   REMOVE fundo preto da animação de minimizar player
+   (player-page transition background)
+   ===================================================== */
+
+/* Container principal da transição */
+#player-page,
+#player-page::before,
+#player-page::after {
+    background: transparent !important;
+}
+
+/* Fundo interno que aparece só na animação */
+#player-page-background {
+    background: transparent !important;
+    opacity: 0 !important;
+}
+
+/* Camada animada usada no collapse */
+ytmusic-player-page-renderer {
+    background: transparent !important;
+}
+
+/* Segurança: impede fade automático */
+ytmusic-player-page-renderer * {
+    transition-property: transform, opacity !important;
+}
+/* === REMOVER FUNDO PRETO BOTÕES BIBLIOTECA (ytmusic-tabs) === */
+/* 1. Remove o fundo preto quando a barra ganha o atributo 'stuck' */
+ytmusic-browse-response ytmusic-tabs[stuck],
+ytmusic-browse-response ytmusic-tabs {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important; /* Remove a sombra escura */
+    --ytmusic-header-background: transparent !important; /* Segurança extra */
+}
+
+
+
+/* 2. Garante que o texto selecionado (BIBLIOTECA) fique branco */
+ytmusic-browse-response ytmusic-tabs .iron-selected {
+    color: white !important;
+    font-weight: 700 !important;
+    border-bottom: 2px solid white !important; /* Opcional: linha embaixo do texto */
+}
+/* 4. Texto não selecionado um pouco mais claro */
+ytmusic-browse-response ytmusic-tabs tp-yt-paper-tab:not(.iron-selected) {
+    color: rgba(255,255,255,0.8) !important;
+}
+/* === CORREÇÃO DA PESQUISA (Baseada na lógica da Biblioteca) === */
+
+/* 1. Remove o fundo preto/sombra quando a barra rola (fica 'stuck') */
+ytmusic-tabbed-search-results-renderer ytmusic-tabs[stuck],
+ytmusic-tabbed-search-results-renderer ytmusic-tabs {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    --ytmusic-header-background: transparent !important;
+}
+/* === CORREÇÃO DA PÁGINA DE PESQUISA (SEARCH) === */
+
+/* 1. Desliga o fundo preto do container principal da pesquisa */
+ytmusic-tabbed-search-results-renderer {
+    /* Força a variável de sistema a ser transparente */
+    --ytmusic-header-background: transparent !important; 
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* 2. Remove o fundo e sombras do cabeçalho interno */
+ytmusic-tabbed-search-results-renderer #header {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* === CUSTOMIZAÇÃO AVANÇADA DA PESQUISA (VIDRO/BLUR) === */
+
+/* 1. A barra de pesquisa onde você digita */
+ytmusic-search-box .search-box {
+    /* Fundo preto bem transparente (0.4) */
+    background: rgba(0, 0, 0, 0.4) !important;
+    
+    /* Efeito de blur interno */
+    backdrop-filter: blur(15px) !important;
+    
+    /* (Opcional) Borda fininha para destacar */
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* 2. A lista de histórico/sugestões que abre embaixo */
+ytmusic-search-box #suggestion-list {
+    /* Fundo preto um pouco mais escuro para ler o texto (0.7) */
+    background: rgba(0, 0, 0, 0.7) !important;
+    
+    /* O blur forte para o efeito de vidro */
+    backdrop-filter: blur(30px) !important;
+    
+    /* Arredonda os cantos da caixa */
+    border-radius: 12px !important;
+    
+    /* Sombra suave para destacar do fundo */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;
+    
+    /* Remove bordas quadradas antigas se existirem */
+    border: none !important;
+}
+
+/* 3. Ajuste para os itens da lista ficarem bonitos no hover */
+ytmusic-search-suggestion:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 8px;
+}
+
+/* 4. Efeito ao passar o mouse (Hover) */
+#suggestion-list ytmusic-search-suggestion:hover,
+#suggestion-list ytmusic-history-suggestion-renderer:hover {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* === CORREÇÃO DO HISTÓRICO (VERSÃO DEEP CLEAN) === */
+
+/* 1. O Vidro no Container Principal */
+ytmusic-search-box #suggestion-list {
+    /* Cor do fundo (Preto 85%) */
+    background: rgba(0, 0, 0, 0.85) !important;
+    
+    /* Blur forte */
+    backdrop-filter: blur(30px) !important;
+    
+    /* Acabamento */
+    border-radius: 12px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6) !important;
+    
+    /* Impede vazamentos */
+    overflow: hidden !important; 
+}
+
+/* 2. O COMANDO MÁGICO: Remove fundo de TUDO dentro da lista */
+/* Note que NÃO TEM o sinal de maior (>). O espaço + asterisco pega tudo. */
+ytmusic-search-box #suggestion-list * {
+    background: transparent !important;
+    box-shadow: none !important;
+    
+    /* Zera variáveis de cor do sistema que podem estar escondidas */
+    --paper-listbox-background-color: transparent !important;
+    --ytmusic-search-suggestion-background-color: transparent !important;
+}
+
+/* 3. Re-adiciona o efeito Hover (passar o mouse) apenas nos itens da lista */
+/* Precisamos ser específicos aqui para o hover funcionar em cima do transparent */
+ytmusic-search-box #suggestion-list tp-yt-paper-item:hover,
+ytmusic-search-box #suggestion-list ytmusic-search-suggestion-renderer:hover,
+ytmusic-search-box #suggestion-list .suggestion-container:hover {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    cursor: pointer !important;
+}
+/* === CORREÇÃO DO MENU LATERAL (ALVO: #guide-wrapper) === */
+
+/* 1. Torna o "Pai" transparente para não bloquear o efeito */
+/* Se o container de trás for preto sólido, o blur da frente não funciona */
+tp-yt-app-drawer#guide #contentContainer {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* 2. Desliga a variável de sistema que força o preto no drawer */
+html, body, ytmusic-app-layout {
+    --app-drawer-content-container_-_background-color: transparent !important;
+}
+
+/* 3. Aplica o Vidro/Blur com Gradiente no elemento */
+#guide-wrapper {
+    /* --- Cor de Fundo Gradiente --- */
+    /* Vai de preto semi-transparente na esquerda para totalmente transparente na direita */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%) !important;
+
+    /* --- O efeito de Blur --- */
+    backdrop-filter: blur(30px) !important;
+
+    /* --- A MÁGICA: Máscara Gradiente para o Blur --- */
+    /* Isso faz o efeito de blur desaparecer suavemente para a direita */
+    /* 'black' significa visível (com blur), 'transparent' significa invisível (sem blur) */
+    /* Ajuste os "60%" para controlar onde o desfoque começa a desaparecer */
+    -webkit-mask-image: linear-gradient(to right, black 0%, black 60%, transparent 100%) !important;
+    mask-image: linear-gradient(to right, black 0%, black 60%, transparent 100%) !important;
+
+    /* Borda suave na direita (opcional, pode remover se preferir sem) */
+    border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
+
+    /* Garante altura total */
+    height: 100% !important;
+}
+
+
+/* 4. Ajuste extra: Remove fundo dos itens de navegação dentro dele */
+#guide-wrapper #items,
+#guide-wrapper ytmusic-guide-renderer {
+    background: transparent !important;
+}
+
+/* === CORREÇÃO DO MENU EXPANSÍVEL (Idêntico à Barra) === */
+
+/* 1. O container do menu (quadrado que abre) */
+ytmusic-player-expanding-menu,
+#expanding-menu {
+    /* COPIADO DA SUA BARRA DE REPRODUÇÃO (#player-bar-background) */
+    background: #29231c !important;
+    backdrop-filter: blur(48px) !important;
+    border-radius: 10px !important;
+
+    /* Ajustes finos de posicionamento e acabamento */
+    margin-bottom: 8px !important; /* Espaço pequeno acima da barra */
+    border: 1px solid rgba(255, 255, 255, 0) !important; /* Borda muito sutil para definição */
+    box-shadow: 0px -4px 12px rgba(42, 29, 15, .63) !important; /* Sombra leve */
+}
+
+/* 2. Garante que os itens dentro sejam transparentes */
+ytmusic-player-expanding-menu #items,
+ytmusic-player-expanding-menu ytmusic-player-expanding-menu-item-renderer,
+#expanding-menu #items {
+    background-color: transparent !important;
+}
+
+/* 3. Efeito ao passar o mouse nos itens (opcional) */
+ytmusic-player-expanding-menu-item-renderer:hover {
+    background-color: rgba(255, 255, 255, 0.08) !important; /* Leve brilho no hover */
+    border-radius: 8px !important;
+}
+#nav-bar-divider {
+    background: rgba(255,255,255,0.08) !important;
+    height: 1px !important;
+}
+
+/* REMOVE a linha inferior do container das abas (Biblioteca / Downloads) */
+.tab-container.ytmusic-tabs {
+    border-bottom: none !important;
+}
+ 
+ /* NÃO EDITAR SEM SABER */
+    html{
+        &, &[dark], &[darker-dark-theme], &[darker-dark-theme][dark], [dark]{
+            background: var(--color-dark) !important;
+            /*Dark*/
+            --ytmusic-nav-bar: var(--color-dark) !important;
+            --ytmusic-player-bar-background: var(--color-dark) !important;
+            --ytmusic-detail-header: var(--color-dark) !important;
+            --paper-checkbox-checkmark-color: var(--color-dark) !important;
+            yt-notification-action-renderer.ytmusic-popup-container{
+                --paper-toast-background-color: var(--color-dark) !important;
+            }
+            [is-bauhaus-sidenav-enabled] {
+                --ytmusic-search-background: var(--color-dark) !important;
+            }
+            ytmusic-tabs.stuck {
+                background-color: var(--color-dark);
+            }
+            /*light*/
+            --ytmusic-background: var(--color-light) !important;
+            --ytmusic-brand-background-solid: var(--color-light) !important;
+            --yt-spec-raised-background: var(--color-light) !important;
+            --paper-dialog-background-color: var(--color-light) !important;
+            --paper-listbox-background-color: var(--color-light) !important;
+            --yt-spec-menu-background: var(--color-light) !important;
+        }
+}
+
+    
+    :root{
+        if useDefaultThemes {
+            --color-dark: theme[0];
+            --color-light: theme[1];
+            --bg-url: url(theme[2]);
+        } else {
+            --color-dark: custom-color-dark;
+            --color-light: custom-color-light;
+            if useDefaultBackgrounds {
+                --bg-url: url(theme[2]);
+            } else {
+                --bg-url: url(custom-bgImage);
+            }
+        }
+    }
+    
+    html{
+        &, &[dark], &[darker-dark-theme], &[darker-dark-theme][dark], [dark]{
+            background: var(--color-dark) !important;
+            /*Dark*/
+            --ytmusic-nav-bar: var(--color-dark) !important;
+            --ytmusic-player-bar-background: var(--color-dark) !important;
+            --ytmusic-detail-header: var(--color-dark) !important;
+            --paper-checkbox-checkmark-color: var(--color-dark) !important;
+            yt-notification-action-renderer.ytmusic-popup-container{
+                --paper-toast-background-color: var(--color-dark) !important;
+            }
+            [is-bauhaus-sidenav-enabled] {
+                --ytmusic-search-background: var(--color-dark) !important;
+            }
+        
+            /*light*/
+            --ytmusic-background: var(--color-light) !important;
+            --ytmusic-brand-background-solid: var(--color-light) !important;
+            --yt-spec-raised-background: var(--color-light) !important;
+            --paper-dialog-background-color: var(--color-light) !important;
+            --paper-listbox-background-color: var(--color-light) !important;
+            --yt-spec-menu-background: var(--color-light) !important;
+        }
+        
+        /*Background Image*/
+
+
+	    
+    }
+  /* SCROLLBAR CONFIG */
+
+body {
+    /* MUDA COR DE TUDO QUE NÂO FOI CUSTOMIZADO, uso pra track da scrollbar */
+    
+    background: #131313 !important;
+    
+    /* Isso garante que a cor cubra a tela toda e fique fixa */
+    background-attachment: fixed !important;
+    background-size: cover !important;
+}
+ /* === SCROLLBAR VETICAL COR === */
+html {
+    /* Sintaxe: <cor-da-barra> <cor-do-fundo> */
+    scrollbar-color: rgba(255, 209, 160, .48) transparent;
+}
+
+/* === SCROLLBAR HORIZONTAL COR (CARROSEL E FILTROS) === */
+
+ul#items,
+ytmusic-chip-cloud-renderer #chips,
+ytmusic-carousel #items {
+    /* Força o padrão moderno (Firefox) */
+    scrollbar-color: rgba(255, 209, 160, .48) transparent !important; 
+    scrollbar-width: thin !important;
+}
+/* SCROLLBAR EMPURRAR TUDO (vw inclui scrollbar).
+   Use 100% (largura do container real). */
+ytmusic-player-bar {
+  width: calc(100% - 48px) !important;
+}
+
+/* === REMOÇÃO SEGURA DAS LINHAS (Tornando invisível sem quebrar) === */
+
+/* 1. Linha do Menu Lateral (Acima de Nova Playlist) */
+/* Mantemos o elemento lá, mas com cor transparente */
+ytmusic-guide-section-renderer #divider,
+ytmusic-guide-renderer #divider {
+    background-color: transparent !important;
+    border-top-color: transparent !important;
+    border-bottom-color: transparent !important;
+}
+
+
+
+/* 1. MATA AS LINHAS ENTRE MÚSICAS (Na busca, playlists, álbuns) */
+ytmusic-responsive-list-item-renderer, /* Lista padrão */
+ytmusic-list-item-renderer,            /* Listas antigas */
+ytmusic-library-row-renderer,          /* Biblioteca */
+ytmusic-playlist-shelf-renderer {      /* Estantes de playlist */
+    border-bottom: none !important;
+    border-top: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+/* === EFEITO VIDRO (BLUR) DEFINITIVO - BOTÕES E FILA === */
+
+/* 1. A CÁPSULA (O Container de Fundo) */
+ytmusic-av-toggle .av-toggle {
+    background: rgba(0, 0, 0, 0.45) !important; /* Fundo vidro escuro geral */
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 99px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+}
+
+/* 2. O FIX: A DIFERENÇA ENTRE ATIVO E INATIVO */
+
+/* Botão DESATIVADO (Fica transparente, mostra o vidro do fundo) */
+ytmusic-av-toggle .song-button, 
+ytmusic-av-toggle .video-button {
+    background-color: transparent !important;
+    color: rgba(255, 255, 255, 0.6) !important; /* Texto um pouco apagado */
+    transition: all 0.3s ease !important;
+}
+
+/* Botão ATIVADO (Ganha um brilho para você saber que está nele) */
+ytmusic-av-toggle .song-button[aria-pressed="true"],
+ytmusic-av-toggle .video-button[aria-pressed="true"] {
+    background-color: rgba(255, 255, 255, 0.2) !important; /* Destaque iluminado */
+    color: white !important; /* Texto branco brilhante */
+    border-radius: 99px !important;
+    box-shadow: inset 0 0 10px rgba(255,255,255,0.1) !important;
+}
+
+
+/* 3. O CABEÇALHO DA FILA (Mantendo o que já funcionou) */
+ytmusic-player-queue {
+    --ytmusic-player-queue-header-background: transparent !important;
+    background-color: transparent !important;
+}
+
+ytmusic-player-queue #header-container {
+    background: rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(20px) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 12px 12px 0 0 !important;
+}
+
+/* 4. O BOTÃO "SALVAR" DENTRO DA FILA */
+ytmusic-player-queue .save-button {
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+/* === CORREÇÃO FINAL: CABEÇALHO DA FILA (Sem linha e Arredondado) === */
+
+ytmusic-queue-header-renderer {
+    /* Visual de Vidro */
+    background: rgb(37, 25, 12) !important;
+    backdrop-filter: blur(1px) !important;
+    
+    /* REMOVE A LINHA CHATA */
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    
+    /* ARREDONDA AS BORDAS */
+    border-radius: 20px !important; /* Valor alto para ficar bem redondo */
+    
+    /* Pequeno espaçamento para não colar nos itens de baixo */
+    margin-bottom: 8px !important;
+}
+
+/* Garante que nada dentro dele tente desenhar borda */
+ytmusic-queue-header-renderer #buttons,
+ytmusic-queue-header-renderer yt-formatted-string {
+    border: none !important;
+}
+/* === CORREÇÃO DEFINITIVA: BOTÕES DE FILTRO (Sem caixa dupla) === */
+
+/* 1. LIMPEZA: Remove o fundo do container externo (a caixa indesejada) */
+ytmusic-chip-cloud-chip-renderer {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    margin-right: 8px !important; /* Mantém o espaçamento */
+}
+
+/* 2. O ESTILO: Aplica o vidro APENAS no botão interno */
+/* O seletor '#chip-container' é o segredo para pegar só a pílula */
+ytmusic-chip-cloud-chip-renderer #chip-container,
+ytmusic-chip-cloud-chip-renderer a {
+    /* Fundo de vidro escuro */
+    background: rgba(0, 0, 0, 0) !important;
+    
+    /* O BLUR (Ajuste aqui se quiser mais ou menos) */
+    backdrop-filter: blur(1px) !important;
+    -webkit-backdrop-filter: blur(20px) !important; /* Compatibilidade */
+    
+
+    
+    /* Texto */
+    color: rgba(255, 255, 255, 0.9) !important;
+    transition: all 0.2s ease !important;
+}
+
+/* 3. Botão SELECIONADO (Brilhante) */
+ytmusic-chip-cloud-chip-renderer[aria-selected="true"] #chip-container,
+ytmusic-chip-cloud-chip-renderer[aria-selected="true"] a {
+    background: rgba(255, 255, 255, 0) !important; /* Mais claro */
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5) !important;
+}
+
+/* 4. Hover (Passar o mouse) */
+ytmusic-chip-cloud-chip-renderer:hover #chip-container {
+    background: rgba(255, 255, 255, 0.15) !important;
+}
+/* === CORREÇÃO: EFEITO MOUSE (HOVER) NOS BOTÕES === */
+
+/* Quando o mouse passa em cima de QUALQUER botão de filtro */
+ytmusic-chip-cloud-chip-renderer:hover #chip-container,
+ytmusic-chip-cloud-chip-renderer:hover a {
+    /* 1. O Fundo fica mais claro (efeito de luz) */
+    background: rgba(56, 48, 41, .58) !important; 
+    
+    /* 2. A Borda fica branca forte */
+    border-color: rgba(255, 255, 255, 0) !important;
+    
+    /* 3. Um brilho externo (Glow) */
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0) !important;
+    
+    /* 4. Transição suave */
+    transition: all 0.2s ease-in-out !important;
+}
+/* === CORREÇÃO: MENU LATERAL (Início, Explorar, Biblioteca) === */
+
+/* 1. O Item SELECIONADO (Ativo) */
+ytmusic-guide-entry-renderer[active] tp-yt-paper-item {
+    /* Fundo vidro claro */
+    background: rgba(0, 0, 0, 0) !important; 
+    
+    /* O BLUR que você pediu */
+    backdrop-filter: blur(1px) !important; 
+    
+    /* Arredonda os cantos (tira o visual quadrado) */
+    border-radius: 10px !important; 
+    
+    /* Acabamento fino */
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 4px 12px #0000 !important;
+    
+    /* Ajuste de margem para não colar nas bordas se precisar */
+    margin: auto !important;
+    width: auto !important;
+}
+
+/* 2. Efeito ao passar o mouse nos itens NÃO selecionados (Hover) */
+ytmusic-guide-entry-renderer:not([active]):hover tp-yt-paper-item {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 12px !important;
+    margin: auto !important;
+    width: auto !important;
+}
+
+/* 3. Garante que o ícone e o texto fiquem brancos/visíveis */
+ytmusic-guide-entry-renderer[active] .title,
+ytmusic-guide-entry-renderer[active] yt-icon {
+    color: white !important;
+    font-weight: bold !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3) !important;
+}
+/* === CORREÇÃO FINAL: BORDAS ARREDONDADAS NA PÁGINA EXPLORAR === */
+
+/* 1. O container principal do botão */
+ytmusic-navigation-button-renderer {
+    background: rgba(0, 0, 0, 0) !important;
+    backdrop-filter: blur(0px) !important;
+    
+    /* BORDAS BEM ARREDONDADAS */
+    border-radius: 20px !important; 
+    
+    /* Remove bordas sólidas e aplica a de vidro */
+    border: 1px solid rgba(255, 255, 255, 0) !important;
+    overflow: hidden !important; 
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* 2. Força o elemento interno (o botão real) a seguir o arredondamento */
+ytmusic-navigation-button-renderer button,
+ytmusic-navigation-button-renderer #button,
+ytmusic-navigation-button-renderer .button-content {
+    background: transparent !important;
+    border-radius: 0px !important; /* Mesma medida do pai */
+    border: none !important;
+}
+
+/* 3. Efeito de brilho ao passar o mouse */
+ytmusic-navigation-button-renderer:hover {
+    background: rgba(56, 48, 41, .58) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4) !important;
+    transform: translateY(-3px) !important;
+}
+
+/* 4. Ajuste do brilho no texto */
+ytmusic-navigation-button-renderer yt-formatted-string {
+    color: white !important;
+    font-weight: 600 !important;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8) !important;
+}
+/* === CORREÇÃO FINAL: BOTÃO ATIVIDADE RECENTE (BIBLIOTECA) === */
+
+/* 1. Ataca a pílula interna onde a cor reside */
+ytmusic-sort-filter-button-renderer #button.ytmusic-sort-filter-button-renderer {
+    /* EFEITO VIDRO */
+    background-color: rgba(0, 0, 0, 0) !important;
+    backdrop-filter: blur(1px) !important;
+    -webkit-backdrop-filter: blur(25px) !important;
+    
+    /* BORDAS ARREDONDADAS (Estilo Pílula) */
+    border-radius: 20px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    
+    /* Remove sombras e fundos padrão do Paper Button */
+    box-shadow: none !important;
+    background-image: none !important;
+}
+
+/* 2. Efeito ao passar o mouse */
+ytmusic-sort-filter-button-renderer #button.ytmusic-sort-filter-button-renderer:hover {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* 3. Garante que o texto e a seta fiquem brancos */
+ytmusic-sort-filter-button-renderer #button.ytmusic-sort-filter-button-renderer iron-icon,
+ytmusic-sort-filter-button-renderer #button.ytmusic-sort-filter-button-renderer .text {
+    color: white !important;
+    --iron-icon-fill-color: white !important;
+}
+
+/* 4. Limpa o container externo para não sobrar quadrados cinzas */
+ytmusic-sort-filter-button-renderer {
+    background: transparent !important;
+}
