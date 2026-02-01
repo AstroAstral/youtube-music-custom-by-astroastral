@@ -1,7 +1,7 @@
 # YouTube Music Custom by AstroAstral
 
 🔗 **Disponível no Stylus:**  
-https://userstyles.world/style/SEU-LINK-AQUI
+https://userstyles.world/style/25762/youtube-music-cstom-by-astroastral
 
 ## Preview
 
